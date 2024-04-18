@@ -7,8 +7,8 @@ SELECT pe.name,
        (m.price - m.price * (pd.discount / 100)) AS discount_price,
        p.name                                    AS pizzeria_name
 FROM person_order po
-         INNER JOIN menu m on m.id = po.menu_id
-         INNER JOIN person_discounts pd on pd.person_id = po.person_id AND pd.pizzeria_id = m.pizzeria_id
-         INNER JOIN person pe on pe.id = po.person_id
-         INNER JOIN pizzeria p on p.id = m.pizzeria_id
+         INNER JOIN menu m ON m.id = po.menu_id
+         INNER JOIN person_discounts pd ON pd.person_id = po.person_id AND pd.pizzeria_id = m.pizzeria_id
+         INNER JOIN person pe ON pe.id = po.person_id
+         INNER JOIN pizzeria p ON p.id = m.pizzeria_id
 ORDER BY 1, 2;
