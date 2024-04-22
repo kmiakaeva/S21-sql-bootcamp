@@ -69,10 +69,10 @@ Follow these steps:
   git clone git@github.com:kmiakaeva/S21-sql-bootcamp.git
 ```
 
-2. Go to the day directory *(00, 01, ...)*
+2. Navigate to the directory representing either the day or team
 
 ```bash
-  cd day-<number>
+  cd <day_or_team>-0<0-9>
 ```
 
 3. Go to the src folder
